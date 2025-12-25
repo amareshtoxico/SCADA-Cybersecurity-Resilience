@@ -1,0 +1,45 @@
+{%extends 'users/userbase.html'%}
+{%block contents%}
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #FF6347 ;
+  color: white;
+}
+
+</style>
+
+<section class="about">
+    <div class="container">
+        <center>
+            <h2>Scada Machine Sent Logs</h2>
+            <p align="justify">
+            <table border="2px">
+            {{data|safe}}
+            </table>
+            </p>
+        </center>
+        <p align="justify">Network communication (local and remote):
+            SCADA networks employ several communication
+            methods. Short-range communication utilizes serial
+            communication, USB, and custom wired networks.
+            Ethernet, TCP/IP, WiFi, dial-up networking,
+            cellular packet data, and other protocols are utilized
+            for long-distance communication. In addition,
+            SCADA networks increasingly employ the Internet
+            for long-distance communication and remote
+            access</p>
+    </div>
+</section>
+{%endblock%}

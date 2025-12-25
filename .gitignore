@@ -1,0 +1,22 @@
+# --- Python Basics ---
+__pycache__/
+*.pyc
+
+# --- Virtual Environment (Crucial: Never upload this) ---
+.venv/
+venv/
+env/
+Scripts/
+Lib/
+
+# --- PyCharm/IDE Settings (Personal settings) ---
+.idea/
+.vscode/
+*.swp
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+
+# --- Security (If you use API keys later) ---
+.env
